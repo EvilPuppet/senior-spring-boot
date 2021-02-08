@@ -6,7 +6,7 @@ comandos a executar
   * docker run --name postgres --network=postgres-network -e "POSTGRES_admin" -p 5432:5432 -d postgres
   
 
-# Projeto foi construido usando spring-boot java 8 e postgres 13
+# Projeto foi construido usando spring-boot java 8 e postgres
 Conexao com o banco
 spring.datasource.url=jdbc:postgresql://localhost:5432/senior
 spring.datasource.username=postgres
