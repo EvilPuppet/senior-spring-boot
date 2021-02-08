@@ -67,7 +67,7 @@ Para executar o projeto executar a classe ChallangeApplication
   
 
  * [DEL] produto/:id > delete
- * [PUT] produto/
+ * [PUT] produto/ > change
 
 ``
 {
@@ -78,5 +78,5 @@ Para executar o projeto executar a classe ChallangeApplication
     "desativado": false  
 }
 ``
-> change
+
 
