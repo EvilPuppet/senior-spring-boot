@@ -1,5 +1,5 @@
-# senior-spring-boot
-#Projeto foi construido usando spring-boot java 8 e postgres 13
+## senior-spring-boot
+##Projeto foi construido usando spring-boot java 8 e postgres 13
 Conexao com o banco
 spring.datasource.url=jdbc:postgresql://localhost:5432/senior
 spring.datasource.username=postgres
@@ -8,7 +8,7 @@ spring.datasource.password=admin
 Para executar o projeto executar a classe ChallangeApplication
 
 
-#Endpoints Pedido
+##Endpoints Pedido
 [GET] pedido/:id  > findById
 [GET] pedido/:pageNo/:pageSize > findAll paginacao
 [POST] pedido /
