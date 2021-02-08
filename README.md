@@ -8,12 +8,12 @@ spring.datasource.password=admin
 Para executar o projeto executar a classe ChallangeApplication
 
 
-# Endpoints Pedido
-[GET] pedido/:id  > findById
-[GET] pedido/:pageNo/:pageSize > findAll paginacao
-[POST] pedido /
+# Endpoints
+# [GET] pedido/:id  > findById
+# [GET] pedido/:pageNo/:pageSize > findAll paginacao
+# [POST] pedido /
 
-``` {
+` {
 	"situacao":false,
 	"produtos": [
     {
@@ -38,31 +38,31 @@ Para executar o projeto executar a classe ChallangeApplication
       "desativado": false
     }
   ]
-} `` > save
+}  `
 
-[DEL] pedido/:id > delete
-[PUT] pedido/ > change
+# [DEL] pedido/:id > delete
+# [PUT] pedido/ > change
 
 
 # Endpoints Produto
-[GET] produto/:id  > findById
-[GET] produto/:pageNo/:pageSize > findAll paginacao
-[POST] produto /
-```{    
+# [GET] produto/:id  > findById
+# [GET] produto/:pageNo/:pageSize > findAll paginacao
+# [POST] produto/
+` {    
     "nome": "Faxina",
     "servico": true,
     "valor": 250.00,
     "desativado": false  
-  }```,
+  }`
   
-[DEL] produto/:id > delete
-[PUT] produto/
-```{
+# [DEL] produto/:id > delete
+# [PUT] produto/
+`{
     "id": "5569cb05-1b6f-41e3-9f8b-9f0974286f24",
     "nome": "Faxina",
     "servico": true,
     "valor": 250.00,
     "desativado": false  
-  }```,
+  }`
 > change
 
