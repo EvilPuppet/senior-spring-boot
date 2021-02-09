@@ -20,7 +20,7 @@ public class ProdutoResource {
     private ProdutoService produtoService;
 
     @GetMapping(value = "/{id}", produces="application/json")
-    public ResponseEntity<Produto> get(@PathVariable("id") UUID id) {
+    public ResponseEntity<Produto> findById(@PathVariable("id") UUID id) {
         Optional<Produto> produto = produtoService.findById(id);
         if (produto.isPresent()) {
             return new ResponseEntity<Produto>(produtoService.findById(id).get(), HttpStatus.OK);
@@ -46,7 +46,7 @@ public class ProdutoResource {
     }
 
     @DeleteMapping(value="/", produces="application/json")
-    public ResponseEntity<Void> deleteClients(@RequestBody Produto produto) {
+    public ResponseEntity<Void> delete(@RequestBody Produto produto) {
         produtoService.delete(produto);
         return ResponseEntity.noContent().build();
     }
